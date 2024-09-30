@@ -1234,12 +1234,12 @@ section {
 .container {
 
      display: flex;
-            justify-content: center; /* По горизонтали */
-            align-items: center; /* По вертикали */
+    justify-content: center; /* По горизонтали */
+    align-items: center; /* По вертикали */
 
 }
-/*@media (min-width: 1700px) {*/
-/*    .container {*/
-/*        margin-left: 40%;*/
-/*    }*/
-/*}*/
+
+.container-description {
+    text-align: left;
+
+}
