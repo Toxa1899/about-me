@@ -66,36 +66,69 @@
     <div class="inner">❅</div>
   </div>
 </div>
-<audio autoplay>
-    <source src="mus.mp3" type="audio/mpeg">
-</audio>
-    <section id="hero" class="d-flex flex-column justify-content-center">
-        <div class="container" data-aos="zoom-in" data-aos-delay="100">
-            <h1>MEFI121</h1>
-            <p>
-                >    I'm a
-                <span class="typed"
-                      data-typed-items="god , крутой , python разработчик , kali user , dava , main.py , html dev? , swift dev?"></span>
-            </p>
-            <div class="social-links">
-                <a href="https://t.me/MEFI121" class="twitter">
-                    <i class="bx bxl-telegram"></i>
-                </a>
-                <a href="https://github.com/Toxa1899" class="github">
-                    <i class="bx bxl-github"></i>
-                </a>
-                <a href="#" class="facebook">
-                    <i class="bx bx-brain"></i>
-                </a>
+
+    <section id="hero" class="d-flex flex-column justify-content-center" style="padding: 0">
+        <div class="container" data-aos="zoom-in" data-aos-delay="100" >
+            <div style="text-align: left; max-width: 20%">
+                <h1>MEFI121</h1>
+                <p>
+                    >    I'm a
+                    <span class="typed"
+                          data-typed-items="god , крутой , python разработчик , kali user , dava , main.py , html dev? , swift dev"></span>
+                </p>
+                <div class="social-links">
+                    <a href="https://t.me/MEFI121" class="twitter">
+                        <i class="bx bxl-telegram"></i>
+                    </a>
+                    <a href="https://github.com/Toxa1899" class="github">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                    <a href="#" class="facebook">
+                        <i class="bx bx-brain"></i>
+                    </a>
+                    <a class="facebook">
+                        <button class="play-button" id="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon"
+                                 width="24" height="24" fill="#45505b"
+                                 viewBox="0 0 24 24"><path d="M18.5 11.13a1 1 0 0 1 0 1.74l-9 5.2A1 1 0 0 1 8 17.2V6.8a1 1 0 0 1 1.5-.86l9 5.2Z">
+                            </path>
+                            </svg>
+                        </button>
+                     <audio id="audio">
+                        <source src="mus.mp3" type="audio/mpeg">
+                    </audio>
+                    </a>
+
+                </div>
             </div>
+
+
+            <script>
+    const audio = document.getElementById('audio');
+    const playButton = document.getElementById('play-button');
+    const svgPause = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#45505b" viewBox="0 0 24 24"><path d="M6 6.6c0-.56 0-.84.1-1.05a1 1 0 0 1 .45-.44C6.76 5 7.04 5 7.6 5h.8c.56 0 .84 0 1.05.1a1 1 0 0 1 .44.45c.11.21.11.49.11 1.05v10.8c0 .56 0 .84-.1 1.05a1 1 0 0 1-.45.44c-.21.11-.49.11-1.05.11h-.8c-.56 0-.84 0-1.05-.1a1 1 0 0 1-.44-.45C6 18.24 6 17.96 6 17.4V6.6Zm8 0c0-.56 0-.84.1-1.05a1 1 0 0 1 .45-.44C14.76 5 15.04 5 15.6 5h.8c.56 0 .84 0 1.05.1a1 1 0 0 1 .44.45c.11.21.11.49.11 1.05v10.8c0 .56 0 .84-.1 1.05a1 1 0 0 1-.45.44c-.21.11-.49.11-1.05.11h-.8c-.56 0-.84 0-1.05-.1a1 1 0 0 1-.44-.45c-.11-.21-.11-.49-.11-1.05V6.6Z"></path></svg>`;
+    const svgPlay = `     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#45505b" viewBox="0 0 24 24"><path d="M18.5 11.13a1 1 0 0 1 0 1.74l-9 5.2A1 1 0 0 1 8 17.2V6.8a1 1 0 0 1 1.5-.86l9 5.2Z"></path></svg>`;
+    playButton.addEventListener('click', () => {
+       if (audio.paused) {
+            audio.play();
+            playButton.innerHTML = svgPause; // Заменяем на SVG для паузы
+        } else {
+            audio.pause();
+            playButton.innerHTML = svgPlay; // Заменяем на SVG для воспроизведения
+        }
+    });
+</script>
         </div>
+
     </section>
-    
+
     <div id="preloader"></div>
     <a href="#"
        class="back-to-top d-flex align-items-center justify-content-center">
         <i class="bi bi-arrow-up-short"></i>
     </a>
+
+
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

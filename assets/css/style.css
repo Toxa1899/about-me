@@ -286,6 +286,7 @@ h6 {
     background: url("../assets/img/sowwyz.png") top right no-repeat;
     background-size: auto;
     position: relative;
+
     
   
 }
@@ -1217,3 +1218,28 @@ section {
     #footer .credits {
         font-size: 13px;
     }
+
+
+
+
+.play-button {
+        background-color: transparent; /* Прозрачный фон */
+        border: none;
+        cursor: pointer;
+        display: flex; /* Используем flex для выравнивания */
+        align-items: center; /* Центрируем по вертикали */
+        padding: 0; /* Убираем отступы */
+    }
+
+.container {
+
+     display: flex;
+            justify-content: center; /* По горизонтали */
+            align-items: center; /* По вертикали */
+
+}
+/*@media (min-width: 1700px) {*/
+/*    .container {*/
+/*        margin-left: 40%;*/
+/*    }*/
+/*}*/
